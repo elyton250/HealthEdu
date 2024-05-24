@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title> HealthEdu | Empower health care professionals.</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/index.css') }}">
+    <link rel="stylesheet" href="../styles/intro.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/intro.css') }}">
+    <link rel="stylesheet" href="../styles/course_cards.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/course_cards.css') }}">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/course.css') }}">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">HealthEdu</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">HealthEdu</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Menu</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Health Profession</a></li>
+              <li><a href="#">Common Course</a></li>
+              <li><a href="#">Researcher</a></li>
+              <li><a href="#">Students</a></li>
+              <li><a href="#">Safety Training</a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Neumorphism</a></li>
+                  <li><a href="#">Pre-loader</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- <li>
+            <a href="#">JAVASCRIPT</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Dynamic Clock</a></li>
+              <li><a href="#">Form Validation</a></li>
+              <li><a href="#">Card Slider</a></li>
+              <li><a href="#">Complete Website</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#">N.R.F</a></li>
+          <li><a href="#">Latest</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+{% block  content %}
+  <!--home intro section-->
+  <main>
+    <section class="hero">
+      <div class="row container">
+        <div class="column">
+          <h2>Empowering healthcare professionals <br />Capacity building.</h2>
+          <p>
+            We are a private capacity development organization for health professionals, 
+            community health workers and the general population. 
+            We equip them with evidence based health contents and improve 
+            knowledge base and skills both online and offline.
+            </p>
+          <div class="buttons">
+            <button class="btn">Read More</button>
+            <button class="btn">Contact Us</button>
+          </div>
+        </div>
+        <div class="column">
+          <img src="{{ url_for('static', filename='images/aggy.jpg') }}" alt="heroImg" class="hero_img" />
+        </div>
+      </div>
+      <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+    </section>
+  </main>
+  
+  <!-- course section-->
+  <div class="card-list">
+    <a href="#" class="card-item">
+        <img src="{{ url_for('static', filename='images/contra.jpg') }}" alt="Card Image">
+        <span class="editor">By HealthEdu</span>
+        <h3>Contraceptive Methods Usage And Benefits 3CPD</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+
+    <a href="#" class="card-item">
+        <img src="{{ url_for('static', filename='images/mental.jpg') }}" alt="Card Image">
+        <span class="editor">By HealthEdu</span>
+        <h3>Mental Health And Wellness Surrounding COVID-19 2CPD Credits</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+
+    <a href="#" class="card-item">
+        <img src="{{ url_for('static', filename='images/covid.jpg') }}" alt="Card Image">
+        <span class="editor">By HealthEdu</span>
+        <h3>COVID-19 Mutations & Vaccines And Healthcare Provider’s Burnout 2CPD Credits.</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+
+    <a href="#" class="card-item">
+        <img src="{{ url_for('static', filename='images/complication.jpg') }}" alt="Card Image">
+        <span class="editor">By HealthEdu</span>
+        <h3>Endemicity Of COVID-19& Long Term Complications 2CPD Credits</h3>
+        <div class="arrow">
+            <i class="fas fa-arrow-right card-icon"></i>
+        </div>
+    </a>
+</div>
+
+<!--begining of the footer-->
+<footer>
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">About us</div>
+          <p>We empower health care professionals through capacity building.</p>
+        </div>
+        <div class="lower">
+          <div class="topic">Contact us</div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>-------------</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>--------@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="middle box">
+        <div class="topic">Our Services</div>
+        <div><a href="#">Courses</a></div>
+        <div><a href="#">Trainings</a></div>
+        <div><a href="#">Provide certification</a></div>
+        <!-- <div><a href="#">Theme Development, Design</a></div>
+        <div><a href="#">Mobile Application Design</a></div>
+        <div><a href="#">Wire raming & Prototyping</a></div> -->
+      </div>
+      <div class="right box">
+        <div class="topic">Subscribe us</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Copyright © 2024 <a href="#">HealthEdu</a> All rights reserved</p>
+    </div>
+  </footer>
+  {% endblock  %}
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/intro.js"></script>
+</body>
+</html>
