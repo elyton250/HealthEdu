@@ -7,5 +7,5 @@ def index():
     return render_template('index.html')
 
 @app.route('/courses')
-def updates(posts=None):
+def courses(posts=None):
     return render_template('courses.html')

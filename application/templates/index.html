@@ -28,7 +28,7 @@
           <i class='bx bx-x' ></i>
         </div>
         <ul class="links">
-          <li><a href="#">Home</a></li>
+          <li><a href="{{ url_for('index')}}">Home</a></li>
           <li>
             <a href="#">Menu</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
@@ -86,7 +86,7 @@
             community health workers and the general population. 
             We equip them with evidence based health contents and improve 
             knowledge base and skills both online and offline.
-            </p>
+          </p>
           <div class="buttons">
             <button class="btn">Read More</button>
             <button class="btn">Contact Us</button>
@@ -120,10 +120,10 @@
         </div>
     </a>
 
-    <a href="#" class="card-item">
+    <a href="{{ url_for('courses') }}" class="card-item">
         <img src="{{ url_for('static', filename='images/covid.jpg') }}" alt="Card Image">
         <span class="editor">By HealthEdu</span>
-        <h3>COVID-19 Mutations & Vaccines And Healthcare Provider’s Burnout 2CPD Credits.</h3>
+        <h3>Anatomy and Physiology & Vaccines And Healthcare Provider’s Burnout 2CPD Credits.</h3>
         <div class="arrow">
             <i class="fas fa-arrow-right card-icon"></i>
         </div>
@@ -137,7 +137,7 @@
             <i class="fas fa-arrow-right card-icon"></i>
         </div>
     </a>
-</div>
+  </div>
 
 <!--begining of the footer-->
 <footer>
